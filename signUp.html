@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<link href="styles/CDStyle.css" type="text/css" rel="stylesheet">
+		<meta charset="utf-8">
+		<title>Enrol for CoderDojo</title>
+	</head>
+	<body>
+		<header>
+			<nav id = "navigation">
+				<a href="Home.html"><img src="images/NavLogo.png" alt="home" id="logo"></a>
+				<a href="juniorPage.html">Juniors&nbsp;Page</a>
+				<a href="seniorPage.html">Seniors&nbsp;Page</a>
+				<a href="info.html">About&nbsp;Us</a>
+				<a href="midTerm.html">Mid&nbsp;Term</a>
+				<a href="signUp.html">Signup</a>
+			</nav>
+		</header>
+		<main>
+			<form action = "http://atlantis.cit.ie/displayvalues.php" class="form">
+			<fieldset id="parents"><legend>Parents:</legend>
+				<br><label>Parent's full name:
+					<input required name="parentName" type="text">
+				</label>
+				<br><label>Parent's E-Mail:
+					<input type = "email" required autocomplete="on" name="parentEmail">
+				</label>
+			</fieldset>
+			<fieldset id="kids"><legend>Kids:</legend>
+				<br><label>Child's Name:
+					<input required name = "childName" type="text">
+				</label>
+				<br><label>Child's Age:
+					<select required name="age">
+						<option value="" disabled selected>Select age...</option> <!--disallows the selection of the placeholer, but keeps it as the default value.-->
+						<option value="7">7</option>
+						<option value="8">8</option>
+						<option value="9">9</option>
+						<option value="10">10</option>
+						<option value="11">11</option>
+						<option value="12">12</option>
+						<option value="13">13</option>
+						<option value="13">14</option>
+						<option value="14">15</option>
+						<option value="15">16</option>
+					</select>
+				</label>
+				<br><label>
+					Are you willing to volunteer?
+					<input type = "checkbox" name= "volunteer">
+				</label>
+				<label>Do you have a laptop?
+					<input type = "checkbox" name="laptop" >
+				</label>
+				<label>Do you own a Raspberry Pi?
+					<input type="checkbox" name ="raspPi">
+				</label>
+			</fieldset>
+			<fieldset><legend>Verify:</legend>
+			<br><label>Are you a computer? Choose your favorite colour:
+				<input type="color" name="favColor">
+			</label>
+			</fieldset>
+			<br><button type = "submit">Submit</button>
+			<button type = "reset">Clear all</button>
+			</form>
+		</main>
+		<footer>
+			<details>
+				<summary>Information</summary>
+				<small>Author: Alex O Regan: <a href="mailto:alex.oriogain@mycit.ie">Alex.oriogain@mycit.ie</a></small>
+			</details>
+		</footer>
+	</body>
+</html>
